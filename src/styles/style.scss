@@ -1,3 +1,5 @@
+@import "./fonts";
+
 $wrap-color: rgb(255, 47, 0);
 
 body {
@@ -37,7 +39,7 @@ body {
 /* promo */
 .promo {
   background-color: #d9cacb;
-  /* background-image: url("/img/promo-bg.jpg"); */
+  background-image: url("../img/promo-bg.jpg"); 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -185,7 +187,7 @@ body {
   }
 
   .promo {
-    /* background-image: url("/img/promo-bg-mobile.jpg"); */
+    background-image: url("../img/promo-bg-mobile.jpg");
     background-position: center bottom;
     padding-top: 0px;
     padding-bottom: 0px;
