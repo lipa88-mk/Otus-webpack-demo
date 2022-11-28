@@ -1,3 +1,5 @@
+$wrap-color: rgb(255, 47, 0);
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -9,7 +11,7 @@ body {
 .wrap {
   max-width: 1065px;
   margin: 0 auto;
-  outline: 1px solid rgb(255, 60, 0);
+  outline: 1px solid $wrap-color;
 }
 
 .title {

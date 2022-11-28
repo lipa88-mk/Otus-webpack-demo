@@ -26,8 +26,13 @@ module.exports = {
                 loader: "html-loader",
               },
               {
-                test: /\.css$/i,
-                use: [MiniCss.loader, "style-loader", "css-loader"],
+                test: /\.(c|sa|sc)ss$/i,
+                use: [
+                    MiniCss.loader, 
+                    "css-loader", 
+                    "sass-loader"
+                ],
+                // use: ["style-loader", "css-loader"],  prod
               },
             // {
             //     test: /\.(jpeg|jpg|png|svg|gif)$/i,
@@ -45,11 +50,11 @@ module.exports = {
           })
     ],
 
-    // devServer: {
-    //     compress: false,
-    //     open: "/",
-    //     port: 5004,
-    //     static: './public',
-    //     hot: true,
-    // },
+    devServer: {
+        compress: false,
+        open: true,
+        port: 5004,
+        // static: './public',
+        hot: true,
+    },
 };
