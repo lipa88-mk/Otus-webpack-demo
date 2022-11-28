@@ -16,7 +16,7 @@ module.exports = {
         filename: "main.js",
         // filename: "main.[contenthash].js", - хеширование при сохранении
         
-        // assetModuleFilename: 'assets/[name][ext]',
+        assetModuleFilename: 'assets/[name][ext]',
         // assetModuleFilename: 'assets/[name]-[hash][ext]'
     },
     module: {
@@ -34,10 +34,10 @@ module.exports = {
                 ],
                 // use: ["style-loader", "css-loader"],  prod
               },
-            // {
-            //     test: /\.(jpeg|jpg|png|svg|gif)$/i,
-            //     type: 'asset/resource'
-            // }, 
+            {
+                test: /\.(jpeg|jpg|png|svg|gif)$/i,
+                type: 'asset/resource'
+            }, 
             {
                 test: /\.(ttf|woff2?)$/i,
                 type: "asset/resource",
