@@ -1,44 +1,3 @@
-/* @font-face {
-  font-family: 'Butler';
-  src: 
-  local('Butler UltraLight'), 
-  local('Butler-UltraLight'), 
-  url('../fonts/butler/Butlerultralight.woff2') format('woff2'), 
-  url('../fonts/butler/Butlerultralight.woff') format('woff'), 
-  url('../fonts/butler/Butlerultralight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Butler';
-  src: 
-    local('Butler Light'), 
-    local('Butler-Light'), 
-    url('../fonts/butler/Butlerlight.woff2') format('woff2'), 
-    url('../fonts/butler/Butlerlight.woff') format('woff'), 
-    url('../fonts/butler/Butlerlight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Butler';
-  src: local('Butler'), url('../fonts/butler/Butler.woff2') format('woff2'), url('../fonts/butler/Butler.woff') format('woff'), url('../fonts/butler/Butler.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Butler';
-  src: local('Butler Medium'), local('Butler-Medium'), url('../fonts/butler/Butlermedium.woff2') format('woff2'), url('../fonts/butler/Butlermedium.woff') format('woff'), url('../fonts/butler/Butlermedium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-} */
-
-*, *::before, *::after{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -49,9 +8,8 @@ body {
 
 .wrap {
   max-width: 1065px;
-  /* width: 1065px; */
   margin: 0 auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid rgb(255, 60, 0);
 }
 
 .title {
@@ -77,7 +35,7 @@ body {
 /* promo */
 .promo {
   background-color: #d9cacb;
-  background-image: url("/img/promo-bg.jpg");
+  /* background-image: url("/img/promo-bg.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -225,7 +183,7 @@ body {
   }
 
   .promo {
-    background-image: url("/img/promo-bg-mobile.jpg");
+    /* background-image: url("/img/promo-bg-mobile.jpg"); */
     background-position: center bottom;
     padding-top: 0px;
     padding-bottom: 0px;
