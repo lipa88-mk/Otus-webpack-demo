@@ -27,14 +27,15 @@ module.exports = {
                         options: {
                             postcssOptions: {
                                 plugins: [
+                                    "autoprefixer",
                                     "postcss-preset-env",
                                     // "postcss-deadcss",
-                                    // "at-rule-packer",
-                                    // "postcss-import"
+                                    "at-rule-packer",
                                 ],
                             },
                         },
                     },
+
                     "sass-loader"
                 ],
             },
@@ -87,6 +88,5 @@ module.exports = {
         compress: false,
         open: true,
         hot: true,
-        port: 8081,
     },
 };
