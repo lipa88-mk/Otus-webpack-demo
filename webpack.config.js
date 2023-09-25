@@ -8,7 +8,7 @@ module.exports = {
     devtool: 'source-map',
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, 'dev'),
         clean: true,
         filename: "main.js",
         assetModuleFilename: 'assets/[name][ext]',
